@@ -5,6 +5,6 @@ st.title("DeepThought ICP Dashboard")
 
 df = pd.read_csv("output/final_scores.csv")
 
-st.dataframe(df)
+st.metric("Total Companies", len(df))
 
-st.write("Total Companies:", len(df))
+st.dataframe(df)
